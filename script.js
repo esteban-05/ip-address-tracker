@@ -1,4 +1,4 @@
-// 1. Inicializar el mapa (centrado en una coordenada por defecto)
+// 1. Inicializar 
 const map = L.map('map').setView([0, 0], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
