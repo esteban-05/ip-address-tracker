@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+
+  <main>
+    <header class="header">
+      <h1 class="title">IP Address Tracker</h1>
+
+      <form class="search-container" id="search-form">
+        <input type="text" id="ip-input" placeholder="Search for any IP address or domain">
+        <button type="submit" class="search-btn">
+          <img src="./images/icon-arrow.svg" alt="Search">
+        </button>
+      </form>
+
+      <section class="info-board">
+        <div class="info-item">
+          <p class="label">IP Address</p>
+          <h2 id="ip-display" class="data">--</h2>
+        </div>
+        <div class="info-item">
+          <p class="label">Location</p>
+          <h2 id="location-display" class="data">--</h2>
+        </div>
+        <div class="info-item">
+          <p class="label">Timezone</p>
+          <h2 id="timezone-display" class="data">UTC --</h2>
+        </div>
+        <div class="info-item">
+          <p class="label">ISP</p>
+          <h2 id="isp-display" class="data">--</h2>
+        </div>
+      </section>
+    </header>
+
+    <div id="map"></div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tu Grupo Aquí</a>.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
